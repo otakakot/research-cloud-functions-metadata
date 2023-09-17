@@ -5,6 +5,7 @@ import (
 	"fmt"
 
 	"cloud.google.com/go/compute/metadata"
+
 	"github.com/otakakot/research-cloud-functions-metadata/env"
 )
 
