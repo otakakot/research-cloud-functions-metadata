@@ -1,0 +1,14 @@
+services:
+  function:
+    container_name: function
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      FUNCTION_TARGET: HelloHTTP
+      ENV: local
+    volumes:
+      - ../:/app
+    restart: always
